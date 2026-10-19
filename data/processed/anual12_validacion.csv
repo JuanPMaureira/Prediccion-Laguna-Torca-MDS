@@ -1,0 +1,19 @@
+objetivo,modelo,RMSE,MAE,n_años,ganancia_vs_mejor_ref_ha
+min_verano,Media de época (referencia),4.73,3.8,19,0.0
+min_verano,Lineal: época + P12,4.76,3.78,19,-0.03
+min_verano,Lineal: época + SPEI12,4.78,3.78,19,-0.05
+min_verano,Lineal: época + P24,4.85,3.84,19,-0.12
+min_verano,Lineal: época + P36,4.87,3.9,19,-0.14
+min_verano,Lineal: época + SPEI24,4.9,3.92,19,-0.17
+min_verano,Persistencia: año anterior (referencia),5.17,4.04,19,-0.44
+min_verano,Random Forest: época + todas,5.47,4.82,19,-0.74
+min_verano,Ridge: época + todas,6.54,5.48,19,-1.81
+media_anual,Media de época (referencia),3.64,2.71,19,0.0
+media_anual,Lineal: época + P24,3.67,2.72,19,-0.03
+media_anual,Lineal: época + SPEI24,3.67,2.71,19,-0.03
+media_anual,Lineal: época + P36,3.78,2.76,19,-0.14
+media_anual,Lineal: época + P12,3.84,2.71,19,-0.21
+media_anual,Lineal: época + SPEI12,3.9,2.72,19,-0.26
+media_anual,Ridge: época + todas,4.23,3.23,19,-0.59
+media_anual,Persistencia: año anterior (referencia),4.33,3.49,19,-0.69
+media_anual,Random Forest: época + todas,4.94,3.94,19,-1.3

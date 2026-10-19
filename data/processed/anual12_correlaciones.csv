@@ -1,0 +1,13 @@
+objetivo,variable,rho_cruda,p_cruda,rho_sin_epoca,p_sin_epoca,n_años
+min_verano,P12,-0.123,0.508,-0.009,0.962,31
+min_verano,P24,-0.278,0.13,-0.01,0.955,31
+min_verano,P36,-0.348,0.055,0.032,0.865,31
+min_verano,SPEI12,-0.113,0.547,0.019,0.921,31
+min_verano,SPEI24,-0.26,0.157,0.0,1.0,31
+min_verano,Tx_verano,0.028,0.882,-0.194,0.297,31
+media_anual,P12,-0.031,0.87,0.197,0.289,31
+media_anual,P24,-0.126,0.499,0.193,0.298,31
+media_anual,P36,-0.145,0.436,0.271,0.141,31
+media_anual,SPEI12,-0.028,0.88,0.214,0.247,31
+media_anual,SPEI24,-0.126,0.5,0.187,0.314,31
+media_anual,Tx_verano,0.13,0.486,-0.113,0.547,31

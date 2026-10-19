@@ -1,0 +1,9 @@
+objetivo,modelo,RMSE_ha,n_años
+Serie MICE+SG (la que usa el modelo),Lineal original (7 variables),5.24,18
+Serie MICE+SG (la que usa el modelo),Lineal + época,3.62,18
+Serie MICE+SG (la que usa el modelo),Media histórica (referencia),5.65,18
+Serie MICE+SG (la que usa el modelo),Año anterior (referencia),2.64,18
+Promedio anual observado (sin imputar),Lineal original (7 variables),6.02,17
+Promedio anual observado (sin imputar),Lineal + época,4.8,17
+Promedio anual observado (sin imputar),Media histórica (referencia),5.91,17
+Promedio anual observado (sin imputar),Año anterior (referencia),4.51,17

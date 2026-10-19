@@ -1,0 +1,52 @@
+# Core
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+plotly
+missingno
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+# Statistics
+statsmodels
+pingouin
+
+# Deep Learning
+tensorflow
+torch
+torchvision
+
+# Explainability
+shap
+
+# Hyperparameter Optimization
+optuna
+
+# Data I/O
+openpyxl
+pyarrow
+xlrd
+
+# Web Scraping
+requests
+beautifulsoup4
+lxml
+
+# Notebooks
+jupyter
+ipywidgets
+
+# Dashboards
+streamlit
+dash
+
+# Utilities
+joblib
+tqdm

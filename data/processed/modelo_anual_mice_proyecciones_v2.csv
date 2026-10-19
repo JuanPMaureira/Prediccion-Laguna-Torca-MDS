@@ -1,0 +1,10 @@
+version,horizonte,RCP26_ha,RCP85_ha,RCP85_menos_RCP26_ha
+Original,Corto plazo (2025-2040),97.8,101.3,3.6
+Original,Mediano plazo (2041-2070),99.0,109.8,10.8
+Original,Largo plazo (2071-2095),99.6,122.2,22.6
+Corregido,Corto plazo (2025-2040),131.7,134.0,2.2
+Corregido,Mediano plazo (2041-2070),134.0,142.3,8.3
+Corregido,Largo plazo (2071-2095),134.4,153.9,19.5
+Corregido + época,Corto plazo (2025-2040),133.1,133.1,0.1
+Corregido + época,Mediano plazo (2041-2070),133.1,133.1,-0.0
+Corregido + época,Largo plazo (2071-2095),133.4,133.4,0.0

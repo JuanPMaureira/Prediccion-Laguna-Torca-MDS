@@ -1,0 +1,7 @@
+escenario,horizonte,area_media_ha,p10_gcms,p90_gcms,efecto_vs_control_ha
+RCP26,Corto plazo (2025-2040),133.3,133.18,133.49,-0.52
+RCP26,Mediano plazo (2041-2070),133.26,133.11,133.44,-0.57
+RCP26,Largo plazo (2071-2095),133.24,133.09,133.43,-0.58
+RCP85,Corto plazo (2025-2040),133.21,133.05,133.36,-0.61
+RCP85,Mediano plazo (2041-2070),132.96,132.78,133.15,-0.86
+RCP85,Largo plazo (2071-2095),132.69,132.46,132.96,-1.13

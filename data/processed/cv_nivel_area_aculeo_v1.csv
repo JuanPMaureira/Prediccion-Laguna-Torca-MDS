@@ -1,0 +1,10 @@
+,RMSE,RMSE_std,MAE,MAE_std,ganancia_vs_climatologia_%
+Persistencia: último valor observado (referencia),286.67,106.0,230.72,85.5,47.13
+Random Forest (+ clima),497.58,305.32,445.74,320.74,8.24
+XGBoost (+ clima),512.05,312.49,461.34,324.75,5.57
+Ridge (+ clima),513.52,311.46,462.66,335.35,5.3
+Random Forest (estacionalidad),541.54,319.2,493.25,344.37,0.13
+Ridge (estacionalidad),541.83,317.87,489.7,346.54,0.08
+Climatología mensual (referencia),542.25,320.48,493.96,345.64,0.0
+XGBoost (estacionalidad),542.67,318.19,493.87,343.97,-0.08
+Media (referencia),550.71,321.76,495.45,352.33,-1.56

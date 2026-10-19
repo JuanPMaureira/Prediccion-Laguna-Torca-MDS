@@ -1,0 +1,12 @@
+# Archivos de datos demasiado grandes para GitHub (>100 MB)
+data/raw/CR2MET_*.nc
+data/raw/proyecciones_climaticas_limpias_1984_2100.csv
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
