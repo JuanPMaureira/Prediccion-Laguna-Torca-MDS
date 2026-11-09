@@ -1,10 +1,10 @@
 ,RMSE,RMSE_std,MAE,MAE_std,ganancia_vs_climatologia_%
 Media (referencia),6.91,2.01,4.48,0.57,3.55
 Ridge (estacionalidad),6.92,2.15,4.49,0.66,3.38
-Ridge (+ clima),6.97,2.37,4.6,0.86,2.7
-Random Forest (+ clima),7.05,1.99,4.67,0.58,1.58
+Ridge (+ clima),6.93,2.27,4.53,0.72,3.22
+Random Forest (+ clima),7.13,2.09,4.73,0.71,0.5
 Random Forest (estacionalidad),7.15,2.18,4.68,0.71,0.17
 Climatología mensual (referencia),7.16,2.2,4.69,0.73,0.0
-XGBoost (estacionalidad),7.19,2.19,4.75,0.72,-0.41
-XGBoost (+ clima),7.2,2.17,4.88,0.71,-0.55
+XGBoost (estacionalidad),7.2,2.18,4.75,0.72,-0.48
+XGBoost (+ clima),7.4,1.88,4.84,0.45,-3.34
 Persistencia: último valor observado (referencia),8.48,2.24,5.81,1.67,-18.42

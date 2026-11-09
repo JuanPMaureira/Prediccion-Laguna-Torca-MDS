@@ -1,6 +1,6 @@
 serie,subconjunto,rho_con_precip_3m,p,n
-Observado,meses observados,0.074,0.29,208
-MICE sin clima,meses observados,0.073,0.295,208
-MICE sin clima,meses imputados,0.001,0.986,212
-MICE con clima,meses observados,0.063,0.367,208
-MICE con clima,meses imputados,0.274,0.0,212
+Observado,meses observados,0.168,0.016,208
+MICE sin clima,meses observados,0.177,0.01,208
+MICE sin clima,meses imputados,-0.043,0.532,212
+MICE con clima,meses observados,0.155,0.026,208
+MICE con clima,meses imputados,0.209,0.002,212

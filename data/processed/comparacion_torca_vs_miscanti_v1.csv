@@ -1,0 +1,16 @@
+,Torca,Miscanti
+Área media observada (ha),129,1229
+"ρ máx. sin época, mensual",0.18 (p3),0.35 (precip)
+"ρ máx. sin época, anual (P o SPEI)",0.20,0.39
+"Mensual: mejor con clima vs mejor referencia (RMSE, ha)",7.68 vs 7.82 (Ridge vs Persistencia),29.10 vs 32.89 (Ridge vs Climatología mensual)
+Mensual: misma comparación en % del área media,5.9 % vs 6.1 %,2.4 % vs 2.7 %
+Mensual: DM-HLN con clima vs mejor referencia (p),0.528,0.002
+"Mensual: DM-HLN con vs sin clima, mismo modelo (p)",0.729,0.217
+Anual: mejor con clima vs mejor referencia,min_verano: 4.71 vs 4.73 ha; media_anual: 3.70 vs 3.64 ha,"min_pre_lluvia: 23.18 vs 21.84 ha (DM p = 0.67, no gana); max_post_lluvia: 25.27 vs 27.22 ha (DM p = 0.58, no gana); media_temporada: 16.66 vs 18.23 ha (DM p = 0.27, no gana)"
+"ρ máx. sin época, anual, segunda fuente JRC",no calculado,0.36
+Anual JRC: mejor con clima vs mejor referencia,no calculado,"min_pre_lluvia: 15.29 vs 16.07 ha (DM p = 0.58, no gana); max_post_lluvia: 8.20 vs 8.74 ha (DM p = 0.79, no gana); media_temporada: 10.04 vs 11.64 ha (DM p = 0.13, no gana)"
+"Salto entre épocas, crudo / ajustado por lluvia (ha)",+11.0 / +8.7,-47.7 / -44.8 (NDWI sin corregir)
+Salto en % del área media,+8.5 %,-3.9 %
+"Salto según JRC, mismos meses (ha) / desfase NDWI − JRC",no calculado (12.1 no se ejecutó),-15.5 / -18.9
+"Sesgo L7 − L5 (pares, ha)",-3.1,+8.7
+"Efecto RCP 8.5 − 2.6 / SSP (largo plazo, ha)","+0.16 (RCP, CMIP5)","min_pre_lluvia: -0.96 (RMSE 23.2); max_post_lluvia: -6.02 (RMSE 25.3); media_temporada: -7.52 (RMSE 16.7) (RCP, CMIP5; sensibilidad)"

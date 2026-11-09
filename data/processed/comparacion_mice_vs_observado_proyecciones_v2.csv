@@ -1,13 +1,13 @@
 enfoque,horizonte,RCP26_ha,RCP85_ha,RCP85_menos_RCP26_ha,efecto_RCP85_vs_control_ha
-Observado (sin imputar),Corto plazo (2025-2040),133.3,133.21,-0.09,-0.61
-Observado (sin imputar),Mediano plazo (2041-2070),133.26,132.96,-0.29,-0.86
-Observado (sin imputar),Largo plazo (2071-2095),133.24,132.69,-0.55,-1.13
-MICE sin clima,Corto plazo (2025-2040),132.87,132.8,-0.07,-0.58
-MICE sin clima,Mediano plazo (2041-2070),132.82,132.57,-0.25,-0.81
-MICE sin clima,Largo plazo (2071-2095),132.79,132.35,-0.44,-1.02
-MICE con clima,Corto plazo (2025-2040),133.07,133.0,-0.07,-0.54
-MICE con clima,Mediano plazo (2041-2070),133.03,132.79,-0.25,-0.76
-MICE con clima,Largo plazo (2071-2095),133.02,132.57,-0.45,-0.98
-MICE con clima + Savitzky-Golay,Corto plazo (2025-2040),133.03,133.0,-0.03,-0.29
-MICE con clima + Savitzky-Golay,Mediano plazo (2041-2070),133.0,132.91,-0.09,-0.38
-MICE con clima + Savitzky-Golay,Largo plazo (2071-2095),132.98,132.79,-0.18,-0.5
+Observado (sin imputar),Corto plazo (2025-2040),133.16,133.1,-0.06,-0.08
+Observado (sin imputar),Mediano plazo (2041-2070),133.16,133.05,-0.11,-0.12
+Observado (sin imputar),Largo plazo (2071-2095),133.23,133.01,-0.22,-0.17
+MICE sin clima,Corto plazo (2025-2040),132.83,132.83,0.0,0.08
+MICE sin clima,Mediano plazo (2041-2070),132.85,132.92,0.07,0.17
+MICE sin clima,Largo plazo (2071-2095),132.87,133.05,0.18,0.3
+MICE con clima,Corto plazo (2025-2040),133.0,132.92,-0.08,-0.22
+MICE con clima,Mediano plazo (2041-2070),132.98,132.72,-0.26,-0.42
+MICE con clima,Largo plazo (2071-2095),133.02,132.46,-0.56,-0.68
+MICE con clima + Savitzky-Golay,Corto plazo (2025-2040),132.83,132.8,-0.03,-0.08
+MICE con clima + Savitzky-Golay,Mediano plazo (2041-2070),132.81,132.72,-0.09,-0.16
+MICE con clima + Savitzky-Golay,Largo plazo (2071-2095),132.82,132.61,-0.21,-0.27

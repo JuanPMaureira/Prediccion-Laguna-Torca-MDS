@@ -1,0 +1,28 @@
+objetivo,modelo,RMSE,MAE,n_años,ganancia_vs_mejor_ref_ha
+min_pre_lluvia,Media de época (referencia),21.84,17.83,16,0.0
+min_pre_lluvia,Ridge: época + todas,23.18,19.33,16,-1.35
+min_pre_lluvia,Lineal: época + SPEI12,24.27,18.54,16,-2.44
+min_pre_lluvia,Random Forest: época + todas,24.79,19.84,16,-2.96
+min_pre_lluvia,Lineal: época + P36,25.28,20.69,16,-3.44
+min_pre_lluvia,Lineal: época + SPEI24,25.43,20.07,16,-3.59
+min_pre_lluvia,Lineal: época + P24,26.56,21.86,16,-4.72
+min_pre_lluvia,Lineal: época + P12,27.54,20.64,16,-5.7
+min_pre_lluvia,Persistencia: año anterior (referencia),29.75,23.15,16,-7.91
+max_post_lluvia,Random Forest: época + todas,25.27,19.48,19,1.95
+max_post_lluvia,Lineal: época + P36,27.21,19.2,19,0.01
+max_post_lluvia,Media de época (referencia),27.22,19.68,19,0.0
+max_post_lluvia,Ridge: época + todas,27.58,20.34,19,-0.36
+max_post_lluvia,Lineal: época + SPEI12,28.04,20.51,19,-0.82
+max_post_lluvia,Lineal: época + P12,28.67,20.85,19,-1.45
+max_post_lluvia,Lineal: época + SPEI24,29.46,21.6,19,-2.24
+max_post_lluvia,Persistencia: año anterior (referencia),30.34,23.32,19,-3.12
+max_post_lluvia,Lineal: época + P24,30.44,21.89,19,-3.22
+media_temporada,Lineal: época + SPEI12,16.66,12.95,17,1.57
+media_temporada,Lineal: época + P12,16.9,13.21,17,1.32
+media_temporada,Lineal: época + P36,17.42,14.33,17,0.81
+media_temporada,Lineal: época + SPEI24,18.02,15.16,17,0.21
+media_temporada,Lineal: época + P24,18.2,15.12,17,0.03
+media_temporada,Media de época (referencia),18.23,14.53,17,0.0
+media_temporada,Ridge: época + todas,19.3,16.22,17,-1.07
+media_temporada,Persistencia: año anterior (referencia),19.36,16.07,17,-1.14
+media_temporada,Random Forest: época + todas,20.09,16.1,17,-1.86

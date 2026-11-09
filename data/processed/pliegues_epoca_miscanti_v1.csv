@@ -1,0 +1,4 @@
+pliegue,entrenamiento,prueba,meses_L8L9_entren,meses_L8L9_prueba,epoca_identificada
+1,1986-01 → 2003-02,2003-03 → 2007-03,0,0,True
+2,1986-01 → 2007-03,2007-04 → 2014-11,0,7,False
+3,1986-01 → 2014-11,2014-12 → 2019-12,7,24,True

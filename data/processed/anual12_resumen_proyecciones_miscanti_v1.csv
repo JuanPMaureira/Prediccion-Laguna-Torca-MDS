@@ -1,0 +1,10 @@
+objetivo,horizonte,modelo,RCP26_ha,RCP85_ha,RCP85_menos_RCP26_ha,efecto_RCP26_vs_control_ha,efecto_RCP85_vs_control_ha,RCP85_p10_gcms,RCP85_p90_gcms,RMSE_validacion_ha
+min_pre_lluvia,Corto plazo (2025-2040),Ridge: época + todas,1207.62,1207.7,0.08,-0.07,0.01,1206.06,1209.76,23.18
+min_pre_lluvia,Mediano plazo (2041-2070),Ridge: época + todas,1207.43,1207.43,0.0,-0.26,-0.26,1204.83,1210.46,23.18
+min_pre_lluvia,Largo plazo (2071-2096),Ridge: época + todas,1207.48,1206.52,-0.96,-0.21,-1.17,1204.4,1210.51,23.18
+max_post_lluvia,Corto plazo (2025-2040),Random Forest: época + todas,1252.41,1250.01,-2.4,-8.68,-11.08,1240.24,1256.14,25.27
+max_post_lluvia,Mediano plazo (2041-2070),Random Forest: época + todas,1251.59,1247.56,-4.03,-9.5,-13.53,1235.84,1253.61,25.27
+max_post_lluvia,Largo plazo (2071-2095),Random Forest: época + todas,1251.48,1245.46,-6.02,-9.61,-15.63,1230.7,1252.06,25.27
+media_temporada,Corto plazo (2025-2040),Lineal: época + SPEI12,1209.68,1208.55,-1.13,-2.61,-3.74,1204.03,1211.6,16.66
+media_temporada,Mediano plazo (2041-2070),Lineal: época + SPEI12,1209.27,1205.26,-4.0,-3.03,-7.03,1197.92,1210.25,16.66
+media_temporada,Largo plazo (2071-2095),Lineal: época + SPEI12,1209.21,1201.69,-7.52,-3.08,-10.6,1191.87,1210.84,16.66

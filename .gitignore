@@ -10,3 +10,10 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Carpetas de trabajo que crean scripts/preparar_carpetas.py y scripts/analisis_consultoria.py
+datos/
+respaldo/
+ejecucion_torca/
+salidas/
+figs/

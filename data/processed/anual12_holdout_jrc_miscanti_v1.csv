@@ -1,0 +1,10 @@
+objetivo,modelo,RMSE,MAE,n_años
+min_pre_lluvia,Random Forest: época + todas,8.54,7.81,5
+min_pre_lluvia,Media de época (referencia),8.48,6.9,5
+min_pre_lluvia,Persistencia: año anterior (referencia),9.1,7.05,5
+max_post_lluvia,Lineal: época + SPEI24,6.97,6.63,5
+max_post_lluvia,Media de época (referencia),7.94,6.8,5
+max_post_lluvia,Persistencia: año anterior (referencia),10.98,9.74,5
+media_temporada,Lineal: época + P36,4.16,3.1,5
+media_temporada,Media de época (referencia),6.3,4.84,5
+media_temporada,Persistencia: año anterior (referencia),5.46,4.3,5
