@@ -73,7 +73,7 @@ TABLAS = {}       # tablas que se exportan a CSV
 
 def _coma(texto):
     """Decimales con coma (español de Chile) en todo texto de la figura."""
-    return re.sub(r"(\d)\.(\d)", r"\1,\2", texto)
+    return re.sub(r"(\d)\.(\d)", r"\1,\2", texto).replace("RCP 2,6", "RCP 2.6").replace("RCP 8,5", "RCP 8.5")
 
 
 def guardar_fig(fig, nombre):
@@ -940,6 +940,54 @@ for a in axes:
     a.axhline(0, color=GRIS, lw=0.8)
 guardar_fig(fig, "f10_tres_lagunas.png")
 
+# ============================== 15c. Proyección 2025-2095 (análisis de sensibilidad) ==============================
+# Curvas por GCM generadas por el notebook de Torca: (A) modelo mensual Ridge + clima (sección 8), promedio anual;
+# (B) modelo anual del mínimo de verano, "Lineal: época + P36" (sección 12.7). Ambos en la escala de Landsat 8/9 (época = 1).
+pm = {e: pd.read_csv(CORR / f"proyeccion_anual_{e}_v2.csv", index_col=0, parse_dates=True) for e in ("rcp26", "rcp85")}
+pm_ctrl = pd.read_csv(CORR / "proyeccion_anual_control_v2.csv", index_col=0, parse_dates=True)["control"]
+for e in pm:
+    pm[e].index = pm[e].index.year
+pm_ctrl.index = pm_ctrl.index.year
+pa = {e: pd.read_csv(CORR / f"anual12_proyeccion_{e}.csv", index_col=0) for e in ("rcp26", "rcp85")}
+rmse_m = float(cv_m.loc["Ridge (+ clima)", "RMSE"])
+rmse_a = float(val12.query("objetivo == 'min_verano' and modelo == 'Lineal: época + P36'")["RMSE"].iloc[0])
+
+
+def resumen_esc(d, desde, hasta):
+    t = d.loc[desde:hasta].mean()          # promedio del periodo para cada GCM
+    return {"mediana": float(t.median()), "p10": float(t.quantile(0.1)), "p90": float(t.quantile(0.9)), "n_gcm": int(d.shape[1])}
+
+
+R["proyeccion"] = {
+    "mensual": {e: resumen_esc(pm[e], 2071, 2095) for e in pm},
+    "mensual_control": float(pm_ctrl.loc[2071:2095].mean()), "mensual_rmse": rmse_m,
+    "anual": {e: resumen_esc(pa[e], 2071, 2095) for e in pa}, "anual_rmse": rmse_a,
+    "obs_L8L9_media_anual": float(anual12.loc[2013:2024, "media_anual"].mean()),
+    "obs_L8L9_min_verano": float(anual12.loc[2013:2024, "min_verano"].mean()),
+}
+fig, axes = plt.subplots(2, 1, figsize=(7.2, 5.6), sharex=True)
+paneles = ((axes[0], pm, pm_ctrl, anual12["media_anual"], rmse_m,
+            "A. Promedio anual: modelo mensual con lluvia y temperatura"),
+           (axes[1], pa, None, anual12["min_verano"], rmse_a,
+            "B. Mínimo de verano (ene-abr): modelo anual con la lluvia de 3 años"))
+for ax, dd, ctrl, obs, rmse, tit in paneles:
+    obs = obs.dropna()
+    for ep, c, lab in ((0, C1, "Observado, Landsat 5 y 7"), (1, C2, "Observado, Landsat 8 y 9")):
+        o = obs[(obs.index > 2012) if ep else (obs.index < 2012)]
+        ax.plot(o.index, o.values, "o", ms=2.8, color=c, label=lab)
+    base = (ctrl if ctrl is not None else dd["rcp26"].median(axis=1))
+    ax.fill_between(base.index, base - rmse, base + rmse, color=GRIS, alpha=0.15, lw=0,
+                    label=f"± error típico del modelo ({rmse:.1f} ha)")
+    for e, c, lab in (("rcp26", C3, "RCP 2.6 (bajas emisiones)"), ("rcp85", "#c0392b", "RCP 8.5 (altas emisiones)")):
+        q = dd[e].quantile([0.1, 0.5, 0.9], axis=1).T
+        ax.fill_between(q.index, q[0.1], q[0.9], color=c, alpha=0.25, lw=0)
+        ax.plot(q.index, q[0.5], color=c, lw=1.4, label=f"{lab}: mediana y p10-p90 de {dd[e].shape[1]} modelos")
+    ax.set(title=tit, ylabel="Superficie (ha)")
+    ax.legend(fontsize=6.3, loc="upper left", ncol=2)
+    ax.set_ylim(top=ax.get_ylim()[1] + 8)
+axes[1].set(xlabel="Año")
+guardar_fig(fig, "f11_proyeccion.png")
+
 # ============================== 16. Exportación ==============================
 for nombre, t in TABLAS.items():
     t.to_csv(OUT / f"{nombre}.csv", index=False)
@@ -957,4 +1005,3 @@ def a_json(o):
 
 (OUT / "resultados.json").write_text(json.dumps(R, ensure_ascii=False, indent=1, default=a_json), encoding="utf-8")
 print("Listo:", len(TABLAS), "tablas,", len(list(FIG.glob('*.png'))), "figuras")
-
